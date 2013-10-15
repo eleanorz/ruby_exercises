@@ -20,10 +20,39 @@
 
 # puts" and the operation used was either addition, subtraction, Multiplication or Division"
 
+
+
+puts  "what 2 number, separated by comma?"
+z = gets.chomp.split(",")
+puts "you said",z
+
+x = z.pop
+y=z.pop
+
+puts "x is",x,"y is", y
+
+# r=rand(1..4)
+r=1
+
+puts 'r is a random number: ' ,r
+
+if r===1
+	puts 'addition selected, the sum is:'
+	puts x+y
+
+elsif r===2
+	puts 'subtraction'
+
+elsif r===3
+	puts 'Multiplication'
+
+elsif r===4
+	puts 'Division'
+
+else 
+	puts ' random number was zero'	
+end
+
+
+
 # puts "goodbye cruel world"
-
-
-puts  "what 2 numbers?"
-z = gets.chomp.split()
-
-puts "you said", z
