@@ -22,13 +22,8 @@
 
 # puts "goodbye cruel world"
 
-x="John, Charles, matt, joe"
 
-puts x.split(",")
+puts  "what 2 numbers?"
+z = gets.chomp.split()
 
-y=""
-
-puts "y is empty" if y.empty?
-
-z = gets "what number?"
 puts "you said", z
