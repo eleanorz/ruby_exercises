@@ -26,13 +26,23 @@ puts  "what 2 number, separated by comma?"
 z = gets.chomp.split(",")
 puts "you said",z
 
-x = z.pop
-y=z.pop
+a = z.pop.to_i
+b=z.pop.to_i
+
+if a>b
+	x=a
+	y=b
+
+else
+	x=b
+	y=a
+end
+
+#now x is the larger number and y is smaller
 
 puts "x is",x,"y is", y
 
-# r=rand(1..4)
-r=1
+r=rand(1..4)
 
 puts 'r is a random number: ' ,r
 
@@ -41,18 +51,17 @@ if r===1
 	puts x+y
 
 elsif r===2
-	puts 'subtraction'
+	print x,' minus ',y,' is: '
+	puts x-y
 
 elsif r===3
-	puts 'Multiplication'
+	puts 'product of these numbers is'
+	puts x*y
 
 elsif r===4
-	puts 'Division'
+	print x, ' divided by ',y,' is: '
+	puts x/y.to_f  #turns this number into a float, so that the remainder can be seen
 
 else 
-	puts ' random number was zero'	
+	puts 'random number was zero'
 end
-
-
-
-# puts "goodbye cruel world"
