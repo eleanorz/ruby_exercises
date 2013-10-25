@@ -88,9 +88,10 @@
 # puts c.sort.max
 
 # Create a random string that is 5 characters long (hint: (65+rand(26)).chr returns a random character; use a map function and a range to do this).
-puts 'here is a random character'+(65+rand(26)).chr 
-d=(1..26).collect {|i| (i+64).chr}
-puts d
-
+# puts 'here is a random character'+(65+rand(26)).chr 
+# d=(1..26).collect {|i| (i+64).chr}
+# puts d
 
 # Generate an array with 10 random strings that are each 5 characters long
+e=(1..10).collect{(1..5).collect{(65+rand(26)).chr.to_s}.join('') }
+puts e
