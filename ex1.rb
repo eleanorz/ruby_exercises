@@ -20,7 +20,7 @@
 
 # puts" and the operation used was either addition, subtraction, Multiplication or Division"
 
-
+#feedback from michael- clear up var names and make x-"bigger_num" so the meaning is clearer
 
 puts  "what 2 number, separated by comma?"
 z = gets.chomp.split(",")
